@@ -3,7 +3,7 @@ Project - Schelling's Model of Segregation
 
 **Use our app and try to create a multiracial community fully happy!** 🌎
 
-<ins> Website: https://share.streamlit.io/grodrig/schelling_model_segregation </ins>
+<ins>Website:</ins> https://share.streamlit.io/grodrig/schelling_model_segregation 
 
 ---
 
