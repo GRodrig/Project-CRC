@@ -129,7 +129,7 @@ This method computes the average similarity ratio of the entire community. Its u
 
 ---
 
-### Demo (Schelling Segregation Model Simulation)
+### Images
 
 Visual Interface
 
@@ -139,7 +139,7 @@ Example of a Run
 
 ![Run example](https://github.com/GRodrig/schelling_model_segregation/blob/master/imgs/example_run.png "Example of a Run")
 
-Parameters:
+**Parameters:**
 
 - **Number of Race**: number of races ranged from 1 to 4;
 - **Population Size**: number of rows or columns. it will be a square grid (rows * columns) in the board;
@@ -164,13 +164,13 @@ Main Dependencies:
 
 ### References
 
-- McCown, F. Schelling’s Model of Segregation. 2014 [Link] (http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
+- McCown, F. Schelling’s Model of Segregation. 2014 [Link] (https://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
 - Yamashita A., Gomez C., Dombroski K Segregation, exclusion and LGBT people in disaster
 impacted areas: experiences from the Higashinihon Dai-Shinsai (Great East-Japan Disaster)
 2017 A Journal of Feminist Geography Volume 24, 2017 - Issue 1: Sexual and Gender Minorities and Disasters DOI: 10.1080/0966369X.2016.1276887 [Link](https://www.tandfonline.com/doi/abs/10.1080/0966369X.2016.1276887)
--Liu T. Y. The Schelling Model of Segregation: Static and Dynamic Equilibrium 23-28 Marc¸o
+- Liu T. Y. The Schelling Model of Segregation: Static and Dynamic Equilibrium 23-28 Marc¸o
 2021 [Link] (https://ytliu0.github.io/schelling/)
-- Moujahid A. An Introduction to Agent-based Models: Simulating Segregation with Python. 2014 [Link] (http://adilmoujahid.com/posts/2014/09/schelling-model/)
-- Moujahid A. An Introduction to Agent-based Models: Simulating Segregation with Python. 2020 [Link] (http://adilmoujahid.com/posts/2020/05/streamlit-python-schelling/)
-- McCown, F. Schelling’s Model of Segregation. 2014 [Link] (http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
+- Moujahid A. An Introduction to Agent-based Models: Simulating Segregation with Python. 2014 [Link] (https://adilmoujahid.com/posts/2014/09/schelling-model/)
+- Moujahid A. An Introduction to Agent-based Models: Simulating Segregation with Python. 2020 [Link] (https://adilmoujahid.com/posts/2020/05/streamlit-python-schelling/)
+- McCown, F. Schelling’s Model of Segregation. 2014 [Link] (https://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
 - Hart, V. and N. Case. [Parable of the polygons](https://ncase.me/polygons/)
