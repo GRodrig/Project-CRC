@@ -47,22 +47,6 @@ class Schelling:
         if number_unhappy == 0:
             self.no_one_is_sad=True   
 
-
-    def get_mean_similarity_ratio(self):
-        total_elem_race = 0
-        similarity_ratio = 0
-        for (w, h), race in np.ndenumerate(self.community):
-            if not self.is_empty(race=race):
-                neighborhood = self.get_neighbourhood(w, h)
-                neighborhood_size = np.size(neighborhood) -1
-                nr_empty_neighbors = np.count_nonzero(neighborhood == 0)
-                if neighborhood_size != nr_empty_neighbors: # If there is neighbours
-                    n_similar = np.count_nonzero(neighborhood == self.get_race(w ,h)) - 1
-                    similarity_ratio += n_similar / (neighborhood_size - nr_empty_neighbors)
-                    total_elem_race += 1
-        return similarity_ratio / total_elem_race if total_elem_race > 0 else 0
-
-
     def get_neighbourhood(self, w ,h ):
         x_min = w - self.neighbour_depth if w - self.neighbour_depth > 0 else 0
         x_max = w + self.neighbour_depth + 1 if w + self.neighbour_depth < self.width else self.width
@@ -97,6 +81,21 @@ class Schelling:
         self.community[random_empty] = current_race
         self.community[width,height] = 0
 
+    def get_mean_similarity_ratio(self):
+        total_elem_race = 0
+        similarity_ratio = 0
+        for (w, h), race in np.ndenumerate(self.community):
+            if not self.is_empty(race=race):
+                neighborhood = self.get_neighbourhood(w, h)
+                neighborhood_size = np.size(neighborhood) -1
+                nr_empty_neighbors = np.count_nonzero(neighborhood == 0)
+                if neighborhood_size != nr_empty_neighbors: # If there is neighbours
+                    n_similar = np.count_nonzero(neighborhood == self.get_race(w ,h)) - 1
+                    similarity_ratio += n_similar / (neighborhood_size - nr_empty_neighbors)
+                    total_elem_race += 1
+        return similarity_ratio / total_elem_race if total_elem_race > 0 else 0
+
+
     def get_race(self, width, height):
         return self.community[width, height]
 
@@ -111,6 +110,6 @@ if __name__ == "__main__":
         if schelling.no_one_is_sad:
             print(f"Everyone is happy at iteration {i}")
             break
-    print("Community")
+    print("Final Community")
     print(schelling.community)
     

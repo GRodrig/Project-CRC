@@ -20,7 +20,7 @@ neighbour_depth = st.sidebar.number_input("Neighbour Depth", 1, 5, 1)
 
 n_iterations = st.sidebar.number_input("Number of Iterations", 10, 500, 20)
 
-empty_ratio = st.sidebar.slider("Empty Houses Ratio", 0.1, 0.9, 0.5)
+empty_ratio = st.sidebar.slider("Empty Slots Ratio", 0.1, 0.9, 0.5)
 
 equi_ratios = (1.0-empty_ratio) / nr_races
 
@@ -51,7 +51,6 @@ def getSchelling(population_w, population_h, empty_ratio, similarity_threshold, 
 
 if load:
     schelling = getSchelling(population, population, empty_ratio, similarity_threshold, neighbour_depth, races_ratio)
-    print("Inicio", schelling.community)
 
     mean_similarity_ratio = []
     mean_similarity_ratio.append(schelling.get_mean_similarity_ratio())
@@ -61,7 +60,7 @@ if load:
     plt.figure(figsize=(8, 4))
 
     # Left hand side graph with Schelling simulation plot
-    cmap = ListedColormap(['white', 'gold', 'limegreen','purple', 'red',]) #  'royalblue'
+    cmap = ListedColormap(['white', 'gold', 'limegreen','purple', 'red'])
     plt.subplot(121)
     plt.axis('off')
     plt.pcolor(np.flipud(schelling.community), cmap=cmap, edgecolors='w', linewidths=1)
@@ -80,8 +79,6 @@ if load:
     progress_bar = st.progress(0)
 
     if st.sidebar.button('Run Simulation', key="run"):
-        print("Run", schelling.community)
-
 
         for i in range(n_iterations):
             schelling.road_to_happiness()
@@ -100,8 +97,6 @@ if load:
             plt.plot(range(0, len(mean_similarity_ratio)), mean_similarity_ratio)
             plt.text(0.90, 1.06, "Similarity Ratio: %.4f" % schelling.get_mean_similarity_ratio(), fontsize=8)
             plt.text(0.90, 1.02, "Iteration Index: %.0f" % i, fontsize=8)
-
-
             
             community_plot.pyplot(plt)
             plt.close("all")
@@ -109,7 +104,5 @@ if load:
             if schelling.no_one_is_sad:
                 progress_bar.progress(100)
                 break
-        print("Limpei")
         st.legacy_caching.clear_cache()
-    print("Fim", schelling.community)
 
