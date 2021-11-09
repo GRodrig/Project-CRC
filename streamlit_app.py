@@ -96,7 +96,7 @@ if load:
             plt.title("Mean Similarity Ratio", fontsize=15)
             plt.plot(range(0, len(mean_similarity_ratio)), mean_similarity_ratio)
             plt.text(0.90, 1.06, "Similarity Ratio: %.4f" % schelling.get_mean_similarity_ratio(), fontsize=8)
-            plt.text(0.90, 1.02, "Iteration Index: %.0f" % i + 1, fontsize=8)
+            plt.text(0.90, 1.02, "Iteration Index: %.0f" % (i + 1), fontsize=8)
             
             community_plot.pyplot(plt)
             plt.close("all")
