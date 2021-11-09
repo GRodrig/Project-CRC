@@ -1,7 +1,8 @@
 # CRC Project
 Project - Schelling's Model of Segregation
 
-**Use our app and try to create a multiracial community fully happy!**
+**Use our app and try to create a multiracial community fully happy!** 🌎
+
 <ins> Website: https://share.streamlit.io/grodrig/schelling_model_segregation </ins>
 
 ---
@@ -144,10 +145,10 @@ Example of a Run
 
 - **Number of Race**: number of races ranged from 1 to 4;
 - **Population Size**: number of rows or columns. it will be a square grid (rows * columns) in the board;
-- **Similarity Threshold**: number between 0.0 and 1.0; this number defines how easy is to make the community the happiness of 
-- **Neighbourhood Depth**: neighbourhood radius of each individual;
+- **Similarity Threshold**: number between 0.0 and 1.0; this number defines how easily is to make the community the happy 
+- **Neighbourhood Depth**: neighbourhood radius of each individual ranged from 1 to 5;
 - **Number of Iterations**: number of iterations ranged from 10 to 500;
-- **Empty Slots Ratio**: number between 0.0 and 1.0 that defines the empty spaces' ratio;
+- **Empty Slots Ratio**: number between 0.1 and 0.9 that defines the empty spaces' ratio;
 - **Races Ratios (X-Z)**: number between 0.0 and 1.0 that defines the races' ratios;
 
 The **Run Simulation** button starts the simulation, and runs for the number of iterations or until the community is fully happy;
