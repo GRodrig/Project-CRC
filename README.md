@@ -1,6 +1,9 @@
 # CRC Project
 Project - Schelling's Model of Segregation
 
+**Use our app and try to create a multiracial community fully happy!**
+<ins> Website: https://share.streamlit.io/grodrig/schelling_model_segregation </ins>
+
 ---
 
 ## Group 11
@@ -13,8 +16,6 @@ Project - Schelling's Model of Segregation
 
 * `schelling_model.py` - Python file that contains a simple Schelling model
 * `streamlit_app.py` - Python file to load/generate a "user-friendly" interface where its possible to define every variable and see live the model changing as well as the "Mean Similarity Ratio" graph
-
-
 ---
 
 ## Installation and execution
