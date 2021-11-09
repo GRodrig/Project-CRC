@@ -1,9 +1,9 @@
 # CRC Project
-Project - Modelo de Segregacao de Schelling
+Project - Schelling's Model of Segregation
 
 ---
 
-## Grupo 15
+## Group 11
 - 102181, Guilherme Rodrigues
 - 98797, Tiago Silva
 
@@ -22,13 +22,13 @@ Project - Modelo de Segregacao de Schelling
 1. Clone this repository
 
 ```bash
-git clone https://github.com/GRodrig/schelling_model_segregation.git
+    git clone https://github.com/GRodrig/schelling_model_segregation.git
 ```
 
 2. Open a terminal and install the requirements
 
 ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
 3. Run the Schelling Segregation Model Simulation (Visual Interface)
@@ -133,7 +133,7 @@ This method computes the average similarity ratio of the entire community. Its u
 
 Visual Interface
 
-![Visual Example](https://github.com/GRodrig/schelling_model_segregation/blob/master/imgs/interface.png.png "Visual Interface")
+![Visual Example](https://github.com/GRodrig/schelling_model_segregation/blob/master/imgs/interface.png "Visual Interface")
 
 Example of a Run
 
@@ -164,7 +164,7 @@ Main Dependencies:
 
 ### References
 
-- McCown, F. Schelling’s Model of Segregation. 2014 [Link]
+- McCown, F. Schelling’s Model of Segregation. 2014 [Link] (http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/)
 - Yamashita A., Gomez C., Dombroski K Segregation, exclusion and LGBT people in disaster
 impacted areas: experiences from the Higashinihon Dai-Shinsai (Great East-Japan Disaster)
 2017 A Journal of Feminist Geography Volume 24, 2017 - Issue 1: Sexual and Gender Minorities and Disasters DOI: 10.1080/0966369X.2016.1276887 [Link](https://www.tandfonline.com/doi/abs/10.1080/0966369X.2016.1276887)
